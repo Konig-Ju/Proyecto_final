@@ -27,7 +27,7 @@
 
 .menu--principal {
     grid-area: menu;
-    visibility: hidden;
+    display: none;
 }
 
 .menu--wrap {
@@ -136,7 +136,7 @@
     }
 
     .menu--wrap {
-        visibility: hidden;
+        display: none;
     }
 
     .navegador--secundario {
