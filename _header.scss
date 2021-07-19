@@ -1,0 +1,153 @@
+@import "variables";
+
+.header {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "menu logo menuAux";
+    position: sticky;
+    top: 0px;
+    background-color: $accent-color1;
+    z-index: 2;
+}
+
+.logo {
+    grid-area: logo;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__imagen {
+    width: 17rem;
+}
+
+.menu--principal {
+    grid-area: menu;
+    visibility: hidden;
+}
+
+.menu--wrap {
+    grid-area: menu;
+}
+
+.navegador--secundario {
+    grid-area: menuAux;
+    
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.fas {
+    font-size: 1.5rem;
+    margin: .1rem;
+    padding: .5rem;
+    color: $font-color
+}
+
+.fas:hover {
+    transition: 500ms;
+    transform: scale(150%);
+}
+
+
+/* TABLETS */
+@media screen and (min-width:768px) {
+    /* HEADER */
+    .logo__imagen {
+        width: 22rem;
+    }
+
+    .navegador--secundario {
+        ul {
+            margin: 0;
+            padding: 0;
+            flex-direction: row;
+            justify-content: center;
+            
+            span {
+            font-size: 1.8rem;
+            margin: 1rem;
+            padding: .8rem;
+            }
+        }
+    }
+}
+
+/* LAPTOP/DESKTOP */
+@media screen and (min-width:1200px) {
+    .header {
+        grid-template-areas: "logo menu menuAux";
+    }
+
+    .logo {
+        justify-content: flex-start;
+
+        .logo__imagen {
+            width: 26rem;
+        }
+    }
+
+    .menu--principal {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            a {
+                margin: 0 2rem;
+
+                li {
+                    display: inline-block;
+                    color: $font-color;
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                }
+
+                li::after{
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 3px;
+                    background: $accent-color2;
+                
+                }
+                
+                li:hover::after{
+                    width: 100%;
+                    transition: width 500ms;
+                }
+            }
+        }
+    }
+
+    .menu--wrap {
+        visibility: hidden;
+    }
+
+    .navegador--secundario {
+        padding: 1rem 4rem;
+
+        ul {
+            justify-content: flex-end;
+
+            span {
+                font-size: 2rem;
+                }
+        }
+    }
+}

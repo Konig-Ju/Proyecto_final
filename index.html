@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kristal Gaming te brinda las últimas novedades en hardware para gaming, además de informarte y mantenerte al tanto de las tecnologías vigentes en el mercado.">
+    <meta name="keywords" content="gaming,gamer,hardware,mouse,teclado,monitor,auriculares">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="css/all.css"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Kristal Gaming</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img class="logo__imagen" src="imagenes/logos/logoWeb.svg" alt="logo website"></a>
+        </div>
+        <div class="menu--principal">
+            <ul class="menu__lista">
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="mouse.html"><li>Mouse</li></a>
+                <a href="teclados.html"><li>Teclados</li></a>
+                <a href="monitores.html"><li>Monitores</li></a>
+                <a href="auriculares.html"><li>Auriculares</li></a>
+            </ul>
+        </div>
+        <div class="menu--wrap">
+            <input type="checkbox" class="menu__toggler">
+            <div class="menu__hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="mouse.html">Mouse</a></li>
+                            <li><a href="teclados.html">Teclados</a></li>
+                            <li><a href="monitores.html">Monitores</a></li>
+                            <li><a href="auriculares.html">Auriculares</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navegador--secundario" aria-label="menu usuario">
+            <ul>
+                <li><a href="*"><span class="fas fa-user"></span></a></li>
+                <li><a href="*"><span class="fas fa-search"></span></a></li>
+                <li><a href="*"><span class="fas fa-shopping-cart"></span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main--index">
+        <section class="slider">
+            <!-- No aplico BEM en este bloque ya que pertenece al css de Bootstrap -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/slider/slider-img1.jpg" class="d-block w-100" alt="imagen slider 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/slider/slider-img2.jpg" class="d-block w-100" alt="imagen slider 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/slider/slider-img3.jpg" class="d-block w-100" alt="imagen slider 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/slider/slider-img4.jpg" class="d-block w-100" alt="imagen slider 4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/slider/slider-img5.jpg" class="d-block w-100" alt="imagen slider 5">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        
+        <section class="articulos">
+            <h2 class="articulos__texto">Articulos destacados</h2>
+            <div>
+                <div class="articulos__articulo primero">
+                    <a href="https://www.logitechg.com/es-ar/products/gaming-mice/pro-x-superlight-wireless-mouse.910-005879.html"><img class="articulo__imagen " src="imagenes/perifericos/articulo-destacado-1.jpg" alt="Logitech Pro X Superlight"></a>
+                </div>
+                <div class="articulos__articulo segundo">
+                    <a href="https://www.duckychannel.com.tw/en/Ducky-One2-Mini-RGB"><img class="articulo__imagen" src="imagenes/perifericos/articulo-destacado-2.jpg" alt="Ducky One 2 Mini"></a>
+                </div>
+                <div class="articulos__articulo tercero">
+                    <a href="https://drop.com/?origin=%2Fbuy%2Fmassdrop-x-sennheiser-hd-58x-jubilee-headphones"><img class="articulo__imagen" src="imagenes/perifericos/articulo-destacado-3.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="comentarios">
+            <h3 class="comentarios__titulo">¡Dejanos tu comentario!</h3>
+            <form action="">
+                <input class="comentarios__input" type="text" name="nombre" placeholder=" Nombre" maxlength="20" required/>
+                <input class="comentarios__input" type="email" name="email" placeholder=" Mail" required/>
+                <select class="comentarios__select"name="sexo">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <textarea class="comentarios__textarea" id="comentario" placeholder=" Comentario"></textarea>
+                <div class="botonera">
+                    <button  class="botonera__boton" type="reset" value="Limpiar">Limpiar</button>
+                    <button  class="botonera__boton" type="submit" value="Enviar">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="menu--auxiliar">
+            <ul>
+                <a href="*"><li>Nosotros</li></a>
+                <a href="*"><li>Contacto</li></a>
+                <a href="*"><li>Soporte</li></a>
+                <a href="*"><li>Novedades</li></a>
+            </ul>
+        </div>
+        <div class="redes">
+            <div class="redes__titulo">¡Seguinos en nuestras redes!</div>
+            <div class="redes__links">
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="blank"><span class="fab fa-facebook-square"></span></a></li>
+                    <li><a href="https://www.instagram.com/" target="blank"><span class="fab fa-instagram-square"></span></a></li>
+                    <li><a href="https://www.twitter.com/" target="blank"><span class="fab fa-twitter-square"></span></a></li>
+                    <li><a href="https://www.youtube.com/" target="blank"><span class="fab fa-youtube-square"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <span class="far fa-copyright"></span> 2021 Kristal Gaming</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

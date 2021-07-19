@@ -1,0 +1,172 @@
+@import "variables";
+
+@mixin display-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    @include display-mobile;
+    background-color: $accent-color1;
+    z-index: 1;
+}
+
+.menu--auxiliar {
+    @include display-mobile;
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    
+        li {
+            margin: 1rem;
+            color: rgb(0, 0, 0);
+            font-size: 1.3rem;
+            font-weight: 500;
+
+            a {
+                margin: 1rem;
+            }
+        }
+        
+        li::after{
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: $accent-color2;
+        
+        }
+        
+        li:hover::after{
+            width: 100%;
+            transition: width 500ms;
+        }
+    }
+}
+
+.redes {
+    @include display-mobile;
+}
+
+.redes__titulo {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.redes__links {
+    @include display-mobile;
+    
+    ul {
+        width: 50%;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+
+.fab {
+    color: $font-color;
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.fab:hover {
+    transition: 500ms;
+    transform: scale(150%);
+}
+
+
+.copyright {
+    p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        font-weight: 300; 
+        color: rgba(0, 0, 0, 0.5);  
+    }
+}
+
+/* TABLETS */
+@media screen and (min-width:768px) {
+    /* FOOTER */
+    .menu--auxiliar {
+        a {
+            margin: 0 1rem;
+
+            li {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .redes {
+        .redes__titulo {
+            font-size: 1.5rem;
+        }
+
+        .fab {
+            font-size: 3.5rem;
+        }
+    }
+
+    .copyright {
+        p {
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+    }
+}
+
+/* LAPTOP/DESKTOP */
+@media screen and (min-width:1200px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "menu redes" 
+        "copyright redes";
+
+        .menu--auxiliar {
+            grid-area: menu;
+            
+            a {
+                margin: 0 2rem;
+
+                li {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .redes {
+            grid-area: redes;
+
+            .redes__titulo {
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+    
+            .fab {
+                font-size: 3.5rem;
+            }
+        }
+
+        .copyright {
+            grid-area: copyright;
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+}
