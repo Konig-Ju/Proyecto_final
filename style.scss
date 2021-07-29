@@ -249,8 +249,8 @@ body {
 @media screen and (min-width:768px) {
     /* MAIN INDEX */
     .carousel {
-        width: 65rem;
-        margin-top: 2rem;
+        width: 100%;
+        margin: 0;
     }
 
     .articulos {
@@ -258,19 +258,12 @@ body {
     }
 
     .articulos__texto {
+        margin: 2rem 1rem 1rem 1rem;
         font-size: 2.5rem;
     }
 
     .articulo__imagen {
         width: 45rem;
-    }
-
-    .primero {
-        transform: translateX(-20%);
-    }
-
-    .tercero {
-        transform: translateX(20%);
     }
 
     .comentarios {

@@ -84,7 +84,7 @@
     }
 }
 
-/* LAPTOP/DESKTOP */
+/* LAPTOP */
 @media screen and (min-width:1200px) {
     .header {
         grid-template-areas: "logo menu menuAux";
@@ -109,7 +109,7 @@
             padding: 0;
 
             a {
-                margin: 0 2rem;
+                margin: 0 1rem;
 
                 li {
                     display: inline-block;
@@ -148,6 +148,17 @@
             span {
                 font-size: 2rem;
                 }
+        }
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width:1600px) {
+    .menu--principal {
+        ul {
+            a {
+                margin: 0 2rem;
+            }
         }
     }
 }

@@ -47,7 +47,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: menu;
-  visibility: hidden;
+  display: none;
 }
 
 .menu--wrap {
@@ -118,7 +118,7 @@
   }
 }
 
-/* LAPTOP/DESKTOP */
+/* LAPTOP */
 @media screen and (min-width: 1200px) {
   .header {
         grid-template-areas: "logo menu menuAux";
@@ -148,7 +148,7 @@
     padding: 0;
   }
   .menu--principal ul a {
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
   .menu--principal ul a li {
     display: inline-block;
@@ -169,7 +169,7 @@
     transition: width 500ms;
   }
   .menu--wrap {
-    visibility: hidden;
+    display: none;
   }
   .navegador--secundario {
     padding: 1rem 4rem;
@@ -181,6 +181,13 @@
   }
   .navegador--secundario ul span {
     font-size: 2rem;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1600px) {
+  .menu--principal ul a {
+    margin: 0 2rem;
   }
 }
 
@@ -346,10 +353,10 @@
     margin: 0 1rem;
   }
   .menu--auxiliar a li {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .redes .redes__titulo {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
   .redes .fab {
     font-size: 3.5rem;
@@ -455,8 +462,8 @@ body {
 }
 
 .carousel {
-  margin: 1rem 1rem 3rem 1rem;
-  width: 33rem;
+  margin: 0 0 3rem 0;
+  width: 100%;
 }
 
 .articulos {
@@ -751,25 +758,18 @@ body {
 @media screen and (min-width: 768px) {
   /* MAIN INDEX */
   .carousel {
-    width: 65rem;
-    margin-top: 2rem;
+    width: 100%;
+    margin: 0;
   }
   .articulos {
     padding: 1rem;
   }
   .articulos__texto {
+    margin: 2rem 1rem 1rem 1rem;
     font-size: 2.5rem;
   }
   .articulo__imagen {
     width: 45rem;
-  }
-  .primero {
-    -webkit-transform: translateX(-20%);
-            transform: translateX(-20%);
-  }
-  .tercero {
-    -webkit-transform: translateX(20%);
-            transform: translateX(20%);
   }
   .comentarios {
     margin-top: 2rem;
