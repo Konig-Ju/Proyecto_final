@@ -1,7 +1,7 @@
 .menu--wrap .menu__toggler {
     position: absolute;
-    top: 1.5rem;
-    left: 1.2rem;
+    top: 1.2rem;
+    left: 1rem;
     z-index: 3;
     cursor: pointer;
     width: 60px;
