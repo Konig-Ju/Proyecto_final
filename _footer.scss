@@ -51,43 +51,52 @@
 
 .redes {
     @include display-mobile;
-}
 
-.redes__titulo {
-    margin-bottom: 1rem;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.redes__links {
-    @include display-mobile;
-    
-    ul {
-        width: 50%;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
+    .redes__titulo {
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
     }
-}
 
+    .redes__botonera {
+        .redes__boton {
+            display: inline-block;
+            height: 4rem;
+            width: 4rem;
+            margin: 0 1rem;
+            background-color: $ligth-color;
+            border-radius: 5rem;
+            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    
+            .redes__icono {
+                display: inline-block;
+                width: inherit;
+                height: inherit;
+                text-align: center;
+                border-radius: 5rem;
+                line-height: 4rem;
+    
+                .fab {
+                    font-size: 2.5rem;
+                    line-height: inherit;
+                    color: $dark-color;
+                }
+            }
 
-.fab {
-    color: $font-color;
-    font-size: 3rem;
-    padding: .5rem;
-}
+            span {
+                font-size: 2rem;
+                color: $font-color;
+                font-weight: 600;
+                line-height: inherit;
+                margin-left: 1rem;
+            }
+        }
 
-.fab:hover {
-    transition: 500ms;
-    transform: scale(150%);
-}
-
-.fab:not(:hover) {
-    transition: 300ms ease-in-out;
+        .redes__boton:hover {
+            width: 200px;
+        }
+    }
 }
 
 .copyright {

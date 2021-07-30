@@ -385,16 +385,22 @@ body {
     }
 
     .articulos {
+        .articulos__texto {
+            margin: 3rem;
+            font-size: 3rem;
+        }
 
         div {
             width: 100%;
+            margin: auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 30rem);
+            grid-auto-rows: 30rem;
             grid-template-areas: 
             "primero segundo"
             "tercero cuarto"
             "quinto sexto";
+            gap: 3rem;
 
             .articulo__imagen {
                 width: 50rem;
@@ -402,26 +408,38 @@ body {
 
             .primero {
                 grid-area: primero;
+                display: flex;
+                justify-content: flex-end;
             }
 
             .segundo {
                 grid-area: segundo;
+                display: flex;
+                justify-content: flex-start;
             }
 
             .tercero {
                 grid-area: tercero;
+                display: flex;
+                justify-content: flex-end;
             }
 
             .cuarto {
                 grid-area: cuarto;
+                display: flex;
+                justify-content: flex-start;
             }
 
             .quinto {
                 grid-area: quinto;
+                display: flex;
+                justify-content: flex-end;
             }
 
             .sexto {
                 grid-area: sexto;
+                display: flex;
+                justify-content: flex-start;
             }
         }
     }

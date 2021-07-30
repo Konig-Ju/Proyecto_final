@@ -288,65 +288,49 @@
           align-items: center;
 }
 
-.redes__titulo {
+.redes .redes__titulo {
   margin-bottom: 1rem;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.redes__links {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.redes .redes__botonera .redes__boton {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  margin: 0 1rem;
+  background-color: #f5f5f5;
+  border-radius: 5rem;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.redes__links ul {
-  width: 50%;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
+.redes .redes__botonera .redes__boton .redes__icono {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  border-radius: 5rem;
+  line-height: 4rem;
 }
 
-.fab {
+.redes .redes__botonera .redes__boton .redes__icono .fab {
+  font-size: 2.5rem;
+  line-height: inherit;
+  color: #202020;
+}
+
+.redes .redes__botonera .redes__boton span {
+  font-size: 2rem;
   color: #000000;
-  font-size: 3rem;
-  padding: .5rem;
+  font-weight: 600;
+  line-height: inherit;
+  margin-left: 1rem;
 }
 
-.fab:hover {
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  -webkit-transform: scale(150%);
-          transform: scale(150%);
-}
-
-.fab:not(:hover) {
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
+.redes .redes__botonera .redes__boton:hover {
+  width: 200px;
 }
 
 .copyright p {
@@ -881,15 +865,20 @@ body {
     width: 90rem;
     margin: 2rem;
   }
+  .articulos .articulos__texto {
+    margin: 3rem;
+    font-size: 3rem;
+  }
   .articulos div {
     width: 100%;
+    margin: auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (30rem)[3];
-        grid-template-rows: repeat(3, 30rem);
+    grid-auto-rows: 30rem;
         grid-template-areas: "primero segundo" "tercero cuarto" "quinto sexto";
+    gap: 3rem;
   }
   .articulos div .articulo__imagen {
     width: 50rem;
@@ -898,31 +887,67 @@ body {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: primero;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .articulos div .segundo {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: segundo;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .articulos div .tercero {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: tercero;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .articulos div .cuarto {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: cuarto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .articulos div .quinto {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: quinto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .articulos div .sexto {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: sexto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   /* MAIN SEC */
   .contenedorIntro {
