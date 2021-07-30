@@ -379,24 +379,49 @@ body {
 /* LAPTOP/DESKTOP */
 @media screen and (min-width:1200px) {
     /* MAIN INDEX */
+    .carousel {
+        width: 90rem;
+        margin: 2rem;
+    }
+
     .articulos {
 
         div {
             width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 30rem);
+            grid-template-areas: 
+            "primero segundo"
+            "tercero cuarto"
+            "quinto sexto";
 
             .articulo__imagen {
                 width: 50rem;
             }
 
             .primero {
-                transform: translateX(0);
+                grid-area: primero;
             }
-        
+
+            .segundo {
+                grid-area: segundo;
+            }
+
             .tercero {
-                transform: translateX(0);
+                grid-area: tercero;
+            }
+
+            .cuarto {
+                grid-area: cuarto;
+            }
+
+            .quinto {
+                grid-area: quinto;
+            }
+
+            .sexto {
+                grid-area: sexto;
             }
         }
     }

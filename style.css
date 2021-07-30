@@ -95,6 +95,11 @@
           transform: scale(150%);
 }
 
+.fas:not(:hover) {
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
 /* TABLETS */
 @media screen and (min-width: 768px) {
   /* HEADER */
@@ -338,6 +343,11 @@
   transition: 500ms;
   -webkit-transform: scale(150%);
           transform: scale(150%);
+}
+
+.fab:not(:hover) {
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .copyright p {
@@ -868,29 +878,52 @@ body {
 /* LAPTOP/DESKTOP */
 @media screen and (min-width: 1200px) {
   /* MAIN INDEX */
+  .carousel {
+    width: 90rem;
+    margin: 2rem;
+  }
   .articulos div {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (30rem)[3];
+        grid-template-rows: repeat(3, 30rem);
+        grid-template-areas: "primero segundo" "tercero cuarto" "quinto sexto";
   }
   .articulos div .articulo__imagen {
     width: 50rem;
   }
   .articulos div .primero {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: primero;
+  }
+  .articulos div .segundo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: segundo;
   }
   .articulos div .tercero {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: tercero;
+  }
+  .articulos div .cuarto {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cuarto;
+  }
+  .articulos div .quinto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: quinto;
+  }
+  .articulos div .sexto {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: sexto;
   }
   /* MAIN SEC */
   .contenedorIntro {
