@@ -297,40 +297,35 @@
 
 .redes .redes__botonera .redes__boton {
   display: inline-block;
-  height: 4rem;
-  width: 4rem;
-  margin: 0 1rem;
-  background-color: #f5f5f5;
-  border-radius: 5rem;
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .redes .redes__botonera .redes__boton .redes__icono {
-  display: inline-block;
-  width: inherit;
-  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 50px;
   text-align: center;
-  border-radius: 5rem;
-  line-height: 4rem;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .redes .redes__botonera .redes__boton .redes__icono .fab {
-  font-size: 2.5rem;
-  line-height: inherit;
-  color: #202020;
-}
-
-.redes .redes__botonera .redes__boton span {
-  font-size: 2rem;
-  color: #000000;
-  font-weight: 600;
-  line-height: inherit;
-  margin-left: 1rem;
-}
-
-.redes .redes__botonera .redes__boton:hover {
-  width: 200px;
+  font-size: 25px;
 }
 
 .copyright p {
