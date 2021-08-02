@@ -67,7 +67,7 @@
             margin: 0 1rem;
             background: $ligth-color;
             border-radius: 50%;
-            box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .2);
             
             .redes__icono {
                 display: flex;
@@ -87,8 +87,8 @@
         }
 
         .redes__boton:hover {
-            transition: all 500ms ease-in;
-            background: #222;
+            transition: all 500ms;
+            background: rgba($color: #29423a, $alpha: 1.0);
 
             .fab {
                 transition: all 400ms ease-out;
@@ -98,7 +98,7 @@
         }
 
         .redes__boton:not(:hover) {
-            transition: 500ms ease-in;
+            transition: 500ms;
 
             .fab {
                 transition: 500ms ease-out;
@@ -112,7 +112,7 @@
         margin-top: 2rem;
         font-size: 1.2rem;
         font-weight: 300; 
-        color: rgba(0, 0, 0, 0.5);  
+        color: rgba(0, 0, 0, 0.7);  
     }
 }
 
@@ -162,9 +162,9 @@
             
             a {
                 margin: 0 2rem;
-
+                
                 li {
-                    font-size: 1.6rem;
+                    font-size: 1.8rem;
                 }
             }
         }
