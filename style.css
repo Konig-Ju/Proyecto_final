@@ -364,6 +364,12 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
+.copyright p a {
+  font-size: inherit;
+  font-weight: 600;
+  color: #000000;
+}
+
 /* TABLETS */
 @media screen and (min-width: 768px) {
   .menu--auxiliar a {
