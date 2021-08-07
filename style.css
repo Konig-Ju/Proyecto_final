@@ -357,14 +357,40 @@
   transition: 500ms ease-out;
 }
 
-.copyright p {
-  margin-top: 2rem;
+.copyright {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
+  margin-top: 2rem;
 }
 
-.copyright p a {
+.copyright .copyright__website {
+  font-size: inherit;
+}
+
+.copyright .copyright__autor {
+  font-size: inherit;
+}
+
+.copyright .copyright__autor span {
+  visibility: hidden;
+}
+
+.copyright .copyright__autor a {
   font-size: inherit;
   font-weight: 600;
   color: #000000;
@@ -384,9 +410,23 @@
   .redes .fab {
     font-size: 3.5rem;
   }
-  .copyright p {
+  .copyright {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: .5rem;
+            column-gap: .5rem;
     font-size: 1.3rem;
     font-weight: 400;
+  }
+  .copyright .copyright__autor {
+    font-size: inherit;
+  }
+  .copyright .copyright__autor span {
+    visibility: visible;
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 }
 

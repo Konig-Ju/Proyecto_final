@@ -108,11 +108,26 @@
 }
 
 .copyright {
-    p {
-        margin-top: 2rem;
-        font-size: 1.2rem;
-        font-weight: 300; 
-        color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 2rem;
+    
+    .copyright__website {
+        font-size: inherit;
+    }
+
+    .copyright__autor {
+        font-size: inherit;
+
+        span {
+            visibility: hidden;
+        }
 
         a {
             font-size: inherit;
@@ -145,9 +160,19 @@
     }
 
     .copyright {
-        p {
-            font-size: 1.3rem;
-            font-weight: 400;
+        flex-direction: row;
+        column-gap: .5rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+
+        .copyright__autor {
+            font-size: inherit;
+            
+            span {
+                visibility: visible;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
         }
     }
 }
