@@ -79,6 +79,7 @@ body {
 
 .articulos {
     width: 100%;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,11 +91,95 @@ body {
         color: $font-color;
     }
 
-    .articulo__imagen {
-        width: 33rem;
-        margin: 1rem;
-        border-radius: 1rem;
-        border: 2px solid $accent-color2;
+    div {
+        a {
+            .articulos__articulo {
+                width: 33rem;
+                height: 18.6rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                border: .2rem solid $accent-color2;
+                border-radius: 1rem;
+
+                .articulos__imagen {
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+
+                    p {
+                        width: 100%;
+                        margin: 0;
+                        text-align: center;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        background: rgba($color: #000000, $alpha: .3);
+                    }
+                }
+
+                .articulos__imagen:hover {
+                    transition: all 500ms;
+                    transform: scale(120%);
+                    
+                    p {
+                        transition: all 500ms;
+                        opacity: 0%;
+                    }
+                }
+
+                .articulos__imagen:not(.articulos__imagen:hover) {
+                    transition: all 500ms;
+
+                    p {
+                        transition: all 500ms;
+                        opacity: 100%;
+                    }
+                }
+
+                .art--1 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-1.jpg);
+                }
+
+                .art--2 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-9.jpg);
+                }
+
+                .art--3 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-4.jpg);
+                }
+
+                .art--4 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-5.jpg);
+                }
+
+                .art--5 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-8.jpg);
+                }
+
+                .art--6 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-7.jpg);
+                }
+
+                .art--7 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-2.jpg);
+                }
+
+                .art--8 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-3.jpg);
+                }
+
+                .art--9 {
+                    background-image: url(imagenes/perifericos/articulo-destacado-6.jpg);
+                }
+            }
+        }
     }
 }
 
@@ -285,15 +370,20 @@ body {
 
     .articulos {
         padding: 1rem;
-    }
 
-    .articulos__texto {
-        margin: 2rem 1rem 1rem 1rem;
-        font-size: 2.5rem;
-    }
+        .articulos__texto {
+            margin: 2rem 1rem 1rem 1rem;
+            font-size: 2.5rem;
+        }
 
-    .articulo__imagen {
-        width: 45rem;
+        div {
+            a {
+                .articulos__articulo {
+                    width: 45rem;
+                    height: 25.3rem;
+                }
+            }
+        }
     }
 
     .comentarios {
@@ -429,11 +519,6 @@ body {
             "primero segundo tercero"
             "cuarto quinto sexto"
             "septimo octavo noveno";
-            row-gap: 3rem;
-            
-            .articulo__imagen {
-                width: 45rem;
-            }
 
             .primero {
                 grid-area: primero;
@@ -551,8 +636,11 @@ body {
 @media screen and (min-width:1600px) {
     .articulos {
         div {
-            .articulo__imagen {
-                width: 50rem;
+            a {
+                .articulos__articulo {
+                    width: 50rem;
+                    height: 28.1rem;
+                }
             }
         }
     }
