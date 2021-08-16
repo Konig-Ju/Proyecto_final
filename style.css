@@ -681,98 +681,6 @@ body {
   background-image: url(imagenes/perifericos/articulo-destacado-6.jpg);
 }
 
-.comentarios {
-  width: 100%;
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.comentarios .comentarios__input {
-  width: 100%;
-  padding: .5rem;
-  font-family: "roboto", sans-serif;
-  font-size: 1.6rem;
-  border: 1px solid #64a690;
-  border-radius: .3rem;
-  margin-bottom: 1rem;
-}
-
-.comentarios .comentarios__select {
-  width: 100%;
-  padding: .5rem;
-  font-family: "roboto", sans-serif;
-  font-size: 1.6rem;
-  border: 1px solid #64a690;
-  border-radius: .3rem;
-  margin-bottom: 1rem;
-  width: 11rem;
-}
-
-.comentarios .comentarios__textarea {
-  width: 100%;
-  padding: .5rem;
-  font-family: "roboto", sans-serif;
-  font-size: 1.6rem;
-  border: 1px solid #64a690;
-  border-radius: .3rem;
-  margin-bottom: 1rem;
-  height: 10rem;
-}
-
-.comentarios .botonera {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem;
-  font-size: 2rem;
-}
-
-.comentarios .botonera .botonera__boton--cancelar {
-  width: 10rem;
-  height: 4rem;
-  font-family: "roboto", sans-serif;
-  font-size: 1.6rem;
-  border: 1px solid #64a690;
-  border-radius: .3rem;
-  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-  background-color: white;
-}
-
-.comentarios .botonera .botonera__boton--enviar {
-  width: 10rem;
-  height: 4rem;
-  font-family: "roboto", sans-serif;
-  font-size: 1.6rem;
-  border: 1px solid #64a690;
-  border-radius: .3rem;
-  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
-  background-color: rgba(127, 255, 212, 0.2);
-}
-
 /***********
 ==MAIN=SEC==
 ************/
@@ -970,6 +878,239 @@ body {
   width: 20rem;
 }
 
+/*************
+==MAIN==AUX==
+**************/
+.main--auxiliar {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* nosotros */
+  /* Soporte */
+}
+
+.main--auxiliar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main--auxiliar div .imagen-nosotros {
+  width: 33rem;
+  height: 18.5rem;
+  margin: 1rem;
+  background-image: url(imagenes/nosotros.jpg);
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.main--auxiliar div .historia {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.main--auxiliar div .historia h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main--auxiliar div .historia p {
+  font-size: 1.4rem;
+}
+
+.main--auxiliar div .mision {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.main--auxiliar div .mision h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main--auxiliar div .mision p {
+  font-size: 1.4rem;
+}
+
+.main--auxiliar div .vision {
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.main--auxiliar div .vision h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main--auxiliar div .vision p {
+  font-size: 1.4rem;
+}
+
+.main--auxiliar .soporte__texto {
+  width: 90%;
+  height: 10rem;
+  margin: 1rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  background-color: #64a690;
+  border-radius: 1rem;
+}
+
+.main--auxiliar .soporte__texto p {
+  margin: 1rem;
+  text-align: center;
+  font: 500;
+  font-size: 1.4rem;
+}
+
+.main--auxiliar .comentarios {
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main--auxiliar .comentarios .comentarios__titulo {
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.main--auxiliar .comentarios .comentarios__input {
+  width: 100%;
+  padding: .5rem;
+  font-family: "roboto", sans-serif;
+  font-size: 1.6rem;
+  border: 1px solid #64a690;
+  border-radius: .3rem;
+  margin-bottom: 1rem;
+}
+
+.main--auxiliar .comentarios .comentarios__select {
+  width: 100%;
+  padding: .5rem;
+  font-family: "roboto", sans-serif;
+  font-size: 1.6rem;
+  border: 1px solid #64a690;
+  border-radius: .3rem;
+  margin-bottom: 1rem;
+  width: 11rem;
+}
+
+.main--auxiliar .comentarios .comentarios__textarea {
+  width: 100%;
+  padding: .5rem;
+  font-family: "roboto", sans-serif;
+  font-size: 1.6rem;
+  border: 1px solid #64a690;
+  border-radius: .3rem;
+  margin-bottom: 1rem;
+  height: 10rem;
+}
+
+.main--auxiliar .comentarios .botonera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.main--auxiliar .comentarios .botonera .botonera__boton--cancelar {
+  width: 10rem;
+  height: 4rem;
+  font-family: "roboto", sans-serif;
+  font-size: 1.6rem;
+  border: 1px solid #64a690;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.main--auxiliar .comentarios .botonera .botonera__boton--enviar {
+  width: 10rem;
+  height: 4rem;
+  font-family: "roboto", sans-serif;
+  font-size: 1.6rem;
+  border: 1px solid #64a690;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(127, 255, 212, 0.2);
+}
+
 /* Tablets */
 @media screen and (min-width: 768px) {
   /* MAIN INDEX */
@@ -1082,6 +1223,19 @@ body {
   }
   .contenedorMarcas div a .marca img {
     width: 30rem;
+  }
+  /* MAIN AUX */
+  /* nosotros */
+  div .imagen-nosotros {
+    width: 50rem;
+    height: 28.5rem;
+  }
+  /*soporte*/
+  .soporte__texto {
+    height: 15rem;
+  }
+  .soporte__texto p {
+    font-size: 1.8rem;
   }
 }
 
@@ -1205,6 +1359,14 @@ body {
   .contenedorMarcas div a .marca {
     width: inherit;
     height: inherit;
+  }
+  /* MAIN AUX */
+  /*soporte*/
+  .soporte__texto {
+    width: 100rem;
+  }
+  .soporte__texto p {
+    font-size: 2rem;
   }
 }
 
