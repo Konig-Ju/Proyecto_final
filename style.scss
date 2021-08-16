@@ -93,6 +93,9 @@ body {
 
     div {
         a {
+            width: fit-content;
+            height: fit-content;
+
             .articulos__articulo {
                 width: 33rem;
                 height: 18.6rem;
@@ -251,7 +254,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 20rem;
+        height: (width/1.7);
         border-radius: .7rem;
     
         img {
@@ -427,25 +430,25 @@ body {
     /* MAIN SEC */
     .contenedorIntro {
         width: 100%;
-        height: 30rem;
+        height: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
 
         .fondoImagen {
-            width: 35rem;
-            height: 22rem;
+            width: 40rem;
+            height: (width/1.7);
 
             img {
-                width: 32rem;
-                height: 19rem;
+                width: 100%;
+                height: 100%;
             }
         }
 
         .textoIntro {
             width: 30rem;
-            height: 22rem;
+            height: fit-content;
             margin-top: 0;
 
             h3 {
@@ -453,7 +456,7 @@ body {
             }
 
             p {
-                padding: 1rem 2rem;
+                padding: 1rem 3rem;
             }
         }
     }
@@ -467,8 +470,8 @@ body {
         }
 
         .video {
-            width: 50rem;
-            height: 28rem;
+            width: 60rem;
+            height: 33.7rem;
         }
     }
 
@@ -519,8 +522,8 @@ body {
 
         div {
             width: 100%;
-            margin: auto;
             display: grid;
+            place-items: center;
             grid-template-columns: repeat(3, 1fr);
             grid-auto-rows: 30rem;
             grid-template-areas: 
@@ -530,56 +533,38 @@ body {
 
             .primero {
                 grid-area: primero;
-                display: flex;
-                justify-content: center;
             }
 
             .segundo {
                 grid-area: segundo;
-                display: flex;
-                justify-content: center;
             }
 
             .tercero {
                 grid-area: tercero;
-                display: flex;
-                justify-content: center;
             }
 
             .cuarto {
                 grid-area: cuarto;
-                display: flex;
-                justify-content: center;
             }
 
             .quinto {
                 grid-area: quinto;
-                display: flex;
-                justify-content: center;
             }
 
             .sexto {
                 grid-area: sexto;
-                display: flex;
-                justify-content: center;
             }
 
             .septimo {
                 grid-area: septimo;
-                display: flex;
-                justify-content: center;
             }
 
             .octavo {
                 grid-area: octavo;
-                display: flex;
-                justify-content: center;
             }
 
             .noveno {
                 grid-area: noveno;
-                display: flex;
-                justify-content: center;
             }
         }
     }
@@ -590,7 +575,7 @@ body {
         justify-content: space-evenly;
 
         .textoIntro {
-            width: 30rem;
+            width: 50rem;
             height: fit-content;
 
             h3 {
@@ -599,16 +584,17 @@ body {
 
             p {
                 font-size: 1.8rem;
+                padding: 0 3rem 2rem 3rem;
             }
         }
 
         .fondoImagen {
             width: 55rem;
-            height: 35rem;
+            height: (width/1.7);
 
             img {
-                width: 50rem;
-                height: 30rem;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -625,13 +611,15 @@ body {
 
     .contenedorMarcas {
         padding: 1rem;
+
         div {
             flex-direction: row;
             justify-content: space-evenly;
 
             a {
-                width: 32.5rem;
-                height: 32.5rem;
+                width: 30rem;
+                height: 30rem;
+                
                 .marca {
                     width: inherit;
                     height: inherit;
